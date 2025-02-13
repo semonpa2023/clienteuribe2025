@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 export function Menu() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Navbar
@@ -20,10 +21,15 @@ export function Menu() {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link class="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/logistica">
+                  Logistica
+                </Link>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   Features
